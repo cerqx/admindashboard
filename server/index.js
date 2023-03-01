@@ -11,6 +11,10 @@ import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 mongoose.set("strictQuery", false);
 
+//DATA IMPORT
+import User from "./models/User.js";
+import { dataUser } from "./data/index.js";
+
 // CONFIGURATION
 dotenv.config();
 const app = express();
@@ -37,5 +41,8 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`🚀 Server on at http://localhost:${PORT}`));
+
+    //ONLY ADD DATA ONE TIME
+    //User.insertMany(dataUser);
   })
   .catch((err) => console.log(`Erro ao conectar com o MongoDB`, `${err}`));
