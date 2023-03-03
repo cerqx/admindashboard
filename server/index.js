@@ -13,7 +13,9 @@ mongoose.set("strictQuery", false);
 
 //DATA IMPORT
 import User from "./models/User.js";
-import { dataUser } from "./data/index.js";
+import Product from "./models/Product.js";
+import ProductStat from "./models/ProductStat.js";
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
 
 // CONFIGURATION
 dotenv.config();
@@ -43,6 +45,9 @@ mongoose
     app.listen(PORT, () => console.log(`🚀 Server on at http://localhost:${PORT}`));
 
     //ONLY ADD DATA ONE TIME
-    //User.insertMany(dataUser);
+
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
+    // User.insertMany(dataUser);
   })
   .catch((err) => console.log(`Erro ao conectar com o MongoDB`, `${err}`));
