@@ -9,7 +9,11 @@ function Customers() {
   const { data, isLoading } = useGetCustomersQuery();
   console.log({ data });
 
-  return <div>Customers</div>;
+  return (
+    <Box m="1.5rem 2.5rem">
+      <Header title="CUSTOMERS" subtitle="List of Customers" />
+    </Box>
+  );
 }
 
 export default Customers;
