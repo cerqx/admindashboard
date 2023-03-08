@@ -18,6 +18,10 @@ const OverallStatSchema = new mongoose.Schema(
       totalSales: Number,
       totalUnits: Number,
     },
+    salesByCategory: {
+      type: Map,
+      of: Number,
+    },
   },
   { timestamps: true }
 );
