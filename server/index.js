@@ -50,7 +50,7 @@ mongoose
 
     //OverallStat.insertMany(dataOverallStat);
     // Product.insertMany(dataProduct);
-    // ProductStat.insertMany(dataProductStat);
+    //ProductStat.insertMany(dataProductStat);
     //Transaction.insertMany(dataTransaction);
     // User.insertMany(dataUser);
   })
