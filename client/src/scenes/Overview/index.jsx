@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Box, FormControl, MenuItem, InputLabel, Select } from "@mui/material";
 import Header from "components/Header";
-import OverviewChart from "components/OverviewChat";
-import { useGetSalesQuery } from "state/api";
+import OverviewChart from "components/OverviewChart";
 
 const Overview = () => {
   const [view, setView] = useState("units");
