@@ -10,7 +10,7 @@ import { ResponsiveLine } from "@nivo/line";
 
 const Daily = () => {
   const [startDate, setStartDate] = useState(new Date("2021-03-06"));
-  const [endDate, setEndDate] = useState(new Date("2021-04-06"));
+  const [endDate, setEndDate] = useState(new Date("2021-04-08"));
   const { data } = useGetSalesQuery();
   const theme = useTheme();
 
