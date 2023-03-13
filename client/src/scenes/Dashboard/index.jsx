@@ -156,6 +156,21 @@ const Dashboard = () => {
             columns={columns}
           />
         </Box>
+        <Box
+          gridColumn="span 4"
+          gridRow="span 3"
+          backgroundColor={theme.palette.background.alt}
+          p="1.5rem"
+          borderRadius="0.55rem"
+        >
+          <Typography variant="h6" sx={{ color: theme.palette.secondary[100] }}>
+            Sales By Category
+          </Typography>
+          <BreakdownChart isDashboard={true} />
+          <Typography p="0 0.6rem" fontSize="0.8rem" sx={{ color: theme.palette.secondary[200] }}>
+            Breakdown of real states and informations via category or revenue made for this year and total sales.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
